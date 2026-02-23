@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        /* Styles for the page */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Styles for the "Open Form" button */
+        button {
+            background-color: #6C63FF;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #5443CC;
+        }
+
+        /* Styles for the modal */
+        #myModal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Styles for the modal content */
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 15px;
+            width: 50%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styles for the close button */
+        .close {
+            color: #6C63FF;
+            float: right;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #5443CC;
+        }
+
+        /* Styles for the form content */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            color: #6C63FF;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 25px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 16px;
+        }
+
+        input[type="file"] {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        input[type="submit"] {
+            background-color: #6C63FF;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5443CC;
+        }
+
+        /* Additional styling for a smooth transition */
+        body, button, input, label {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="openForm()">Open Form</button>
+
+    <!-- The Modal -->
+    <div id="myModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            
+            <h2 style="text-align: center; color: #6C63FF;">Application Form</h2>
+
+            <form action="/submit" method="post" enctype="multipart/form-data">
+                <!-- Your form fields here -->
+                <label for="cgpa">CGPA:</label>
+                <input type="text" id="cgpa" name="cgpa" required>
+
+                <label for="ielts">IELTS Score:</label>
+                <input type="text" id="ielts" name="ielts" required>
+
+                <label for="gre">GRE Score:</label>
+                <input type="text" id="gre" name="gre" required>
+
+                <label for="paper">Upload Paper:</label>
+                <input type="file" id="paper" name="paper" accept=".pdf, .doc, .docx" required>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to open and close the modal
+        function openForm() {
+            document.getElementById("myModal").style.display = "flex";
+        }
+
+        function closeForm() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

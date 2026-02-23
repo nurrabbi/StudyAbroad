@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        /* Styles for the page */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #222;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Styles for the "Open Form" button */
+        button {
+            background: linear-gradient(135deg, #333, #555);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #444, #666);
+        }
+
+        /* Styles for the modal */
+        #myModal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Styles for the modal content */
+        .modal-content {
+            background: linear-gradient(135deg, #333, #555);
+            color: white;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 15px;
+            width: 50%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styles for the close button */
+        .close {
+            color: #fff;
+            float: right;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #ddd;
+        }
+
+        /* Styles for the form content */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+        label:hover {
+            color: #ddd;
+        }
+        /* Hover effect for text input fields */
+        input[type="text"]:hover {
+            background: #444;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hover effect for file input fields */
+        input[type="file"]:hover {
+            background: #555;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hover effect for submit button */
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #444, #666);
+        }
+
+        input {
+            width: calc(100% - 30px);
+            padding: 15px;
+            margin-bottom: 25px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 8px;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:hover {
+            background: #444;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="file"] {
+            border: 1px solid #555;
+            padding: 10px;
+            background-color: #444;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input[type="file"]:hover {
+            background: #555;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(135deg, #333, #555);
+            color: white;
+            transition: background 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #444, #666);
+        }
+
+        /* Additional styling for a smooth transition */
+        body, button, input, label {
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="openForm()">Open Form</button>
+
+    <!-- The Modal -->
+    <div id="myModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            
+            <h2 style="text-align: center; color: #fff;">Application Form</h2>
+
+            <form action="/submit" method="post" enctype="multipart/form-data">
+                <!-- Your form fields here -->
+                <label for="cgpa">CGPA:</label>
+                <input type="text" id="cgpa" name="cgpa" required>
+
+                <label for="ielts">IELTS Score:</label>
+                <input type="text" id="ielts" name="ielts" required>
+
+                <label for="gre">GRE Score:</label>
+                <input type="text" id="gre" name="gre" required>
+
+                <label for="paper">Upload Paper:</label>
+                <input type="file" id="paper" name="paper" accept=".pdf, .doc, .docx" required>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="DB.js">
+        // JavaScript to open and close the modal
+    
+        // function openForm() {
+        //     document.getElementById("myModal").style.display = "flex";
+        // }
+
+        // function closeForm() {
+        //     document.getElementById("myModal").style.display = "none";
+        // }
+    </script>
+
+</body>
+</html>

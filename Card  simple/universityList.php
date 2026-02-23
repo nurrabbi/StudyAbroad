@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <!-- css style -->
+    <link rel="stylesheet" href="CSS-Study/StudyPractice.css">
+    <link rel="stylesheet" href="CSS-Study/universityList.css">
+
+
+    <style>
+        /* {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        } */
+
+        .banner {
+            /* background-color: #0510279a; */
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .banner-info {
+            padding-left: 100px;
+        }
+
+        .banner-title {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 46px;
+
+
+        }
+
+        .banner-paragrap {
+            color: gray;
+            width: 423px;
+            text-align: center;
+        }
+
+        /* .img img{
+            width: 40%;
+        } */
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="topBar">
+                <div class="rightHalf">
+                    <ul>
+                        <li><a href="#">
+                                <!-- <?php echo $name ?> -->
+                            </a></li>
+                        <li><a href="myAccount.php">My Account</a></li>
+
+                        <li><a href="contact2.php">Contact</a></li>
+                        <li><a href="logout.php">Logout</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- manu-bar start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="pic/Logo.png" alt="" srcset="">
+            <a class="navbar-brand" href="index2.php">Education World</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="allKidsBook2.php">Kids Study <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tuition.php" class="nav-link">Tuition Platform</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bookShop.php" class="nav-link ">Book Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="studentLoan.php" class="nav-link ">Student Loan</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="studyAbroad.php" class="nav-link ">Study Abroad</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="texts">
+                            <!-- <p></p> -->
+                        </div>
+                    </li>
+
+
+                </ul>
+                <div class="robot">
+                    <a href="robot.php"> <img src="pic/robot.png" style="width : 50px;" class="rbt" alt=""></a>
+
+                </div>
+            </div>
+        </nav>
+        <!-- manu-bar end -->
+        <div class="hr"></div>
+
+        <!-- <a href="#" class="brand">Anime</a> -->
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+
+            </div>
+        </div>
+
+        <!-- slider start -->
+        <section class="banner">
+            <div class="banner-info">
+                <h1 class="banner-title">Pursue Education <br> In Your Dream Nation</h1>
+                <p class="banner-paragrap">Up to 100% scholarship,top rank university, 20 hours work
+                    permit per week as international student</p>
+            </div>
+            <div class="img">
+                <img src="images/travel-planning-1--unscreen.gif" alt="">
+            </div>
+        </section>
+        <!-- slider end -->
+    </header>
+
+    <main>
+        <div class="card-item">
+            <article class="card">
+                <img class="card__background" src="images/us.png"
+                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                    height="2193" />
+                <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title">USA</h2>
+                        <p class="card__description">
+                            Scholarship available, 3 years work permit
+                        </p>
+                    </div>
+                    <button class="card__button">Read more</button>
+                </div>
+            </article>
+            <article class="card">
+                <img class="card__background" src="images/germany.png"
+                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                    height="2193" />
+                <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title">Germany</h2>
+                        <p class="card__description">
+                            Up to 100% scholarship, 20 hours work permit per week as an
+                            international student, PR opportunity after completed stud
+                        </p>
+                    </div>
+                    <button class="card__button">Read more</button>
+                </div>
+            </article>
+            <article class="card">
+                <img class="card__background" src="images/uk (2).png"
+                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                    height="2193" />
+                <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title">UK</h2>
+                        <p class="card__description">
+                            IELTS 5.5, PTE 48, TOFEL 90.Up to 100% scholarship,top rank university
+                        </p>
+                    </div>
+                    <button class="card__button">Read more</button>
+                </div>
+            </article>
+        </div>
+        <div class="card-item">
+            <article class="card">
+                <img class="card__background" src="images/Canada.png"
+                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                    height="2193" />
+                <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title">Canada</h2>
+                        <p class="card__description">Scholarship available.
+                            Full time work permit as an international student, PR opportunity after completed
+                            study
+                        </p>
+                    </div>
+                    <button class="card__button">Read more</button>
+                </div>
+            </article>
+            <article class="card">
+                <img class="card__background" src="images/Italy.png"
+                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                    height="2193" />
+                <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title">Italy</h2>
+                        <p class="card__description">
+                            Up to 100% scholarship, 20 hours work permit per week as an
+                            international student, PR opportunity after completed study
+                        </p>
+                    </div>
+                    <button class="card__button">Read more</button>
+                </div>
+            </article>
+            <article class="card">
+                <img class="card__background" src="images/Australia.png"
+                    alt="Photo of Cartagena's cathedral at the background and some colonial style houses" width="1920"
+                    height="2193" />
+                <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title">Australia</h2>
+                        <p class="card__description">
+                            Up to 100% scholarship, 20 hours work permit per week as an
+                            international student, PR opportunity after completed study
+                        </p>
+                    </div>
+                    <button class="card__button">Read more</button>
+                </div>
+            </article>
+        </div>
+        <!-- <div class="card">
+            <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
+                alt="">
+            <div class="card-content">
+                <h2>
+                    Card Heading
+                </h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum,
+                    quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa
+                    asperiores harum? Dicta odio aut hic.
+                </p>
+                <a href="#" class="button">
+                    Find out more
+                    <span class="material-symbols-outlined">
+                        arrow_right_alt
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
+                alt="">
+            <div class="card-content">
+                <h2>
+                    Card Heading
+                </h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum,
+                    quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa
+                    asperiores harum? Dicta odio aut hic.
+                </p>
+                <a href="#" class="button">
+                    Find out more
+                    <span class="material-symbols-outlined">
+                        arrow_right_alt
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
+                alt="">
+            <div class="card-content">
+                <h2>
+                    Card Heading
+                </h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum,
+                    quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa
+                    asperiores harum? Dicta odio aut hic.
+                </p>
+                <a href="#" class="button">
+                    Find out more
+                    <span class="material-symbols-outlined">
+                        arrow_right_alt
+                    </span>
+                </a>
+            </div>
+        </div> -->
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- js link -->
+
+</body>
+
+</html>
